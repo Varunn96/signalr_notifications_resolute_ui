@@ -1,0 +1,33 @@
+<div class=" content">
+  <form #userForm="ngForm" autocomplete="off" class="needs-validation col-lg-6 col-md-8 col-sm-10" [formGroup]='loginForm'
+    (ngSubmit)="LoginToAccount()" novalidate name="login-form">
+    <div class="logo">
+      <i class="fab fa-ravelry"></i>
+    </div>
+    <div class="form-group">
+      <div class="username">
+        <input type="text" ng-required="true" name="Username" formControlName="Username" class="form-control" id="validationCustom03"
+          placeholder="Username / Email" [ngClass]="{ 'is-invalid': isSubmitted && formInputControls.Username.errors }" />
+        <div *ngIf="isSubmitted && formInputControls.Username.errors" class="invalid-feedback">
+          <div *ngIf="formInputControls.Username.errors.required" class="validation-message">*Username is required</div>
+        </div>
+      </div>
+      <div class="password">
+        <input type="password" name="password" formControlName="Password" class="form-control" id="validationCustom04"
+          placeholder="Password" required [ngClass]="{ 'is-invalid': isSubmitted && formInputControls.Password.errors }" />
+        <i id="pass-status" class="fa fa-eye" aria-hidden="true" onClick="viewPassword()"></i>
+        <div *ngIf="isSubmitted && formInputControls.Password.errors" class="invalid-feedback">
+          <div *ngIf="formInputControls.Password.errors.required" class="validation-message">*Password is required</div>
+          <div *ngIf="formInputControls.Password.errors.minlength" class="validation-message">*Password must be at
+            least 6 characters</div>
+        </div>
+      </div>
+      <div class="btn ">
+        <button id="buttonId" type="submit">LOG IN</button>
+      </div>
+      <section *ngIf="unauthorized">
+        <p id="invalid"> {{unauthorized}} </p>
+      </section>
+    </div>
+  </form>
+</div>

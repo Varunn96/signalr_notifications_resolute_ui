@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Dirty code, needs to be replaced someday */
+.mat-form-field-label {
+  color: white !important;
+}
+
+.mat-select-value-text {
+  color: white !important;
+}
+
+.mat-select-arrow {
+  color: white !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+  color: white !important;
+  background-color: white !important;
+}
+

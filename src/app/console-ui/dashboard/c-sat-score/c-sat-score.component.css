@@ -1,0 +1,32 @@
+::ng-deep .options {
+  padding: 20px;
+  background-color: rgba(191, 191, 191, 0.15);
+  margin-top: 20px;
+}
+
+::ng-deep .option {
+  margin-top: 10px;
+}
+
+::ng-deep .caption {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+::ng-deep .option > span {
+  margin-right: 10px;
+}
+
+::ng-deep .option > .dx-widget {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#chart-demo{
+width: 720px;
+}
+
+dxo-title.text {
+  background-color: #263238;
+}
+

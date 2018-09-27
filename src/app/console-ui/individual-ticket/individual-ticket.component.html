@@ -1,0 +1,57 @@
+<div class="fullContent">
+  <div class="left-side-content">
+    <!-- Chat Module will come here -->
+    <iframe [src]="chatHubUrl | safe" ></iframe>
+  </div>
+
+
+  <div class="right-side-content">
+          <div id="square">
+            <img id="UserImage" src="{{userImage?.profileImageUrl}}" alt="UserImage">
+          </div>
+          <p> {{TicketById?.name}}</p>
+          <p> Ticket ID : {{TicketById?.id}} </p>
+          <p >
+            <b>Issue: </b> {{TicketById?.subject}} </p>
+          <p>
+            <b>Description: </b>
+          </p>
+          <p id="description">
+            {{TicketById?.description}}
+          </p>
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input type="text" placeholder="Subject" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+              <mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption>
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                  {{option}}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </form>
+        <form id="statusAndPriority" style="color: white">
+          <mat-form-field>
+            <mat-select class="ticket-status" placeholder="{{TicketById?.status == 0 ? 'Open' : (TicketById?.status == 1 ? 'Closed' : 'Due')}}" [(ngModel)]="selectedStatusValue"
+              name="status">
+              <mat-option (click)="updateStatus()" *ngFor="let status of statuses" [value]="status.value">
+                {{status?.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </form>
+        <form>
+          <mat-form-field>
+            <mat-select placeholder="{{TicketById?.priority | titlecase }}" [(ngModel)]="selectedPriorityValue" name="priority">
+              <mat-option (click)=updatePriority() *ngFor="let priority of priorities" [value]="priority.value">
+                {{priority?.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </form>
+        <div class="btn-class">
+          <button (click)="openDialog()" id="suggest-btn">GIVE SOLUTION</button>
+          <button (click)="back()" id="back-btn">BACK</button>
+        </div>
+    </div>
+
+  </div>

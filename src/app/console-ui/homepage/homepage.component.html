@@ -1,0 +1,28 @@
+
+  <div class="container">
+    <mat-grid-list cols="2" rowHeight="2:1" gutterSize="10px">
+      <mat-grid-tile [routerLink]="['/console/tickets', 'open']" class="agentTicketsOpen">
+        <mat-card-content>
+          <h2>Open Tickets</h2>
+          <h3>{{numberOfTickets?.open}}</h3>
+        </mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile [routerLink]="['/console/tickets', 'close']" class="agentTicketsClosed">
+        <mat-card-content>
+          <h2>Closed Tickets</h2>
+          <h3>{{numberOfTickets?.closed}}</h3>
+        </mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile [routerLink]="['/console/tickets', 'due']" class="departmentTicketsUnassigned">
+        <mat-card-content>
+          <h2>Unassigned Tickets</h2>
+          <h3>{{numberOfTickets?.due}}</h3>
+        </mat-card-content>
+      </mat-grid-tile>
+      <mat-grid-tile [routerLink]="['/console/tickets', 'all']" class="departmentTicketsTotal">
+        <mat-card-content>
+          <h2>Total Tickets</h2>
+          <h3>{{numberOfTickets?.total}} </h3>
+        </mat-card-content>
+      </mat-grid-tile>
+    </mat-grid-list>

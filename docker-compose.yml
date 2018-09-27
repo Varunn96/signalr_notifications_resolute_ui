@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  web:
+   build: .
+   labels:
+     - "SERVICE_4200_NAME=Consoleui"
+     - "SERVICE_TAG=ConsoleuiTag"
+
+    # container_name: resolute-console-ui
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    # labels:
+    #   SERVICE_4200_NAME: Consoleui
+    #   SERVICE_TAG: ConsoleuiTag
+    # volumes:
+    #   - '.:/usr/src/app'
+    #   - '/usr/src/app/node_modules'
+    # # ports:
+    # #   - '4200:4200'
+
+

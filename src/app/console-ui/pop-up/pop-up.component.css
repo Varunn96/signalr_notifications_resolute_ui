@@ -1,0 +1,41 @@
+::ng-deep .my-panel .mat-dialog-container{
+  background:linear-gradient(135deg, #184e68 0%,#57ca85 100%) !important;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+#yes-btn{
+  border-radius: .25rem;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 5px 20px 5px 20px;
+  border: 2px solid #ffffff;
+}
+
+#yes-btn:hover{
+  background-color: #f5f5f6;
+  color:#004d40 ;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+#btn{
+  margin: 0 auto;
+}
+
+#btn button{
+  margin: 0 auto
+ }

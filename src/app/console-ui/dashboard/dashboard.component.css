@@ -1,0 +1,19 @@
+
+mat-grid-list {
+  margin: 40px;
+}
+
+mat-grid-tile {
+  color: #263238;
+  background-color: white;
+}
+
+app-gamification, app-resolution-time {
+  width: 100%;
+  height: 100%;
+}
+
+app-c-sat-score {
+  height: 100%;
+  width: 98%;
+}

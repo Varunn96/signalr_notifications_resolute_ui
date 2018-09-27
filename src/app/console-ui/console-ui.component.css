@@ -1,0 +1,125 @@
+mat-toolbar {
+  background-color: #004d40 ;
+  color: white;
+}
+
+.mat-drawer{
+  width: 20%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+#mainTitle {
+  padding-left: 25px;
+  letter-spacing: 4px;
+}
+
+.example-sidenav{
+  background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
+}
+
+.mat-drawer-content {
+  width: 100%;
+  height: 638px;
+  margin: auto;
+  background-color: #f5f5f6;
+}
+
+#square-box{
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+#square-box::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#photo-background{
+  background-color: transparent;
+  padding: 15px 0px 15px 0px;
+  width: 100%;
+}
+
+#UserImage-box{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#agentDetails {
+  padding: 10px;
+  color: #ffffff;
+  border-width: 5px;
+  /* border-right-style: solid; */
+}
+
+#navigation {
+  padding: 0px;
+
+}
+
+.link-btn{
+  background-color: transparent;
+  font-size: medium;
+  width: 100%;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 10px;
+  text-align: left;
+}
+
+.link-btn:hover{
+  border:0px;
+  background-color: #f5f5f6;
+  color:#004d40 ;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.6s ease 0s;
+}
+
+.logout-btn{
+  background-color: transparent;
+  width: 90%;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.logout-btn:hover{
+  border:0px;
+  background-color: #ffffff;
+  color:#004d40 ;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.6s ease 0s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#createButton{
+  background-color: #f5f5f6;
+}
+

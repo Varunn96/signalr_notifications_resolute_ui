@@ -1,0 +1,13 @@
+<h3 mat-dialog-title> Please provide a Solution in ensemble</h3>
+
+<div ace-editor [(text)]="text"
+  [mode]="'yaml'"
+  [theme]="'eclipse'"
+  [options]="options"
+  [autoUpdateContent]="true"
+  [durationBeforeCallback]="1000"
+  style="min-height: 200px; width:100%; overflow: auto;">
+</div>
+<div id="btn" mat-dialog-actions>
+  <button mat-raised-button (click)="save()" id="yes-btn">SUBMIT</button>
+</div>

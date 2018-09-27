@@ -1,0 +1,20 @@
+<section id="newNoteSection">
+  <form [formGroup]="noteForm" id="form" (ngSubmit)="onSubmit()">
+    <!--
+      <label>
+        <input type="text" maxlength="60" formControlName="Userid" placeholder="User">
+      </label>
+      <br> -->
+    <label>
+      <input type="text" maxlength="60" formControlName="Userhandle" placeholder="User Handle">
+    </label>
+    <label>
+      <input type="text" maxlength="60" formControlName="Description" placeholder="Description">
+    </label>
+    <br>
+
+    <button mat-button color="primary" type="submit" form="form" value="Submit">Create</button>
+  </form>
+
+</section>
+<!-- onclick="document.location.href='http://localhost:4200/notes'" -->

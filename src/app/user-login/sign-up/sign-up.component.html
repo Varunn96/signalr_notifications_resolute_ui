@@ -1,0 +1,58 @@
+  <div class="content" >
+  <form #userForm="ngForm" autocomplete="off" class="needs-validation col-lg-6 col-md-8 col-sm-10" [formGroup]='signUpForm' (ngSubmit)="GenerateAccount()"
+    novalidate name="signup-form">
+    <div class="logo">
+      <i class="fab fa-ravelry"></i>
+    </div>
+    <h1>Create a New Account</h1>
+    <div class="form-group">
+      <div class="teamname-input">
+        <input type="text" ng-required="true"  name="organisationDisplayName" formControlName="organisationDisplayName" class="form-control"
+          id="validationCustom01" placeholder="Company Name" [ngClass]="{ 'is-invalid': submitted && formInputControls.organisationDisplayName.errors }"
+        />
+        <div *ngIf="submitted && formInputControls.organisationDisplayName.errors" class="invalid-feedback">
+          <div *ngIf="formInputControls.organisationDisplayName.errors.required" style="color: yellow">*Organization Name is required</div>
+        </div>
+      </div>
+
+      <div class="username-input">
+        <input type="text" name="organisationName"  formControlName="organisationName" class="form-control" id="validationCustom02"
+          placeholder="Unique Team Name" required [ngClass]="{ 'is-invalid': submitted && formInputControls.organisationName.errors }"
+        />
+        <div *ngIf="submitted && formInputControls.organisationName.errors" class="invalid-feedback">
+          <div *ngIf="formInputControls.organisationName.errors.required" style="color: yellow;">*UserName is required</div>
+        </div>
+      </div>
+
+      <div class="email-id-input">
+        <input type="text" name="email" class="form-control" formControlName="email" id="validationCustom04" placeholder="Enter your E-mail ID"
+          required [ngClass]="{ 'is-invalid': submitted && formInputControls.email.errors }" />
+        <div *ngIf="submitted && formInputControls.email.errors" class="invalid-feedback">
+          <div *ngIf="formInputControls.email.errors.required" style="color: yellow;">*Email is required</div>
+          <div *ngIf="formInputControls.email.errors.email" style="color: yellow;">*Email must be a valid email address</div>
+        </div>
+      </div>
+
+      <div class="password-input">
+        <input type="password" name="password" formControlName="Password" class="form-control" id="validationCustom05" placeholder="New Password"
+          required [ngClass]="{ 'is-invalid': submitted && formInputControls.Password.errors }" />
+        <div *ngIf="submitted && formInputControls.Password.errors" class="invalid-feedback">
+          <div *ngIf="formInputControls.Password.errors.required" style="color: yellow;">*Password is required</div>
+          <div *ngIf="formInputControls.Password.errors.minlength" style="color: yellow;">*Password must be at least 6 characters</div>
+        </div>
+      </div>
+
+      <div class="confirm-password-input">
+        <input type="password" class="form-control" formControlName="ConfirmPassword" id="validationCustom06" placeholder="Confirm Password"
+          required [ngClass]="{ 'is-invalid': submitted && formInputControls.ConfirmPassword.errors }">
+        <div *ngIf="submitted && formInputControls.ConfirmPassword.errors" class="invalid-feedback">
+        </div>
+        <span style="color: yellow; font-size: 13px" *ngIf="ErrorMessage">{{ErrorMessage}}</span>
+        <br>
+      </div>
+      <div class="btn ">
+        <button [disabled]="loading" id="buttonId" type="submit">SIGN UP</button>
+      </div>
+    </div>
+  </form>
+</div>

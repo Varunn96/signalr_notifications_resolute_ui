@@ -1,0 +1,70 @@
+#tickets {
+  background-color: #263238;
+}
+
+mat-tab-nav-bar{
+  background-color: aliceblue;
+}
+
+#displayLinks {
+  color:black;
+}
+
+.mat-menu-panel {
+  background: #263238;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+}
+
+td, th {
+  color : #263238;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+nav {
+  float: left;
+  width: 700px;
+  color: black;
+}
+
+form {
+  padding: 10px 20px;
+  color: black;
+}
+
+label, mat-select {
+  color: black;
+  margin: 20px 0px;
+}
+
+#submit {
+  margin: 0px 0px 20px 0px;
+}
+
+#pagination_nav {
+  float: right;
+}
+
+#filterButton {
+  margin: 6px 40px;
+  float: right;
+}
+
+.pagenav {
+  padding: 6px;
+}
+
+.active {
+  color: red;
+}
+
+a {
+  cursor: pointer;
+  font-size: 15px;
+}

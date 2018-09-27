@@ -1,0 +1,84 @@
+.content{
+  height: 100%;
+  padding-top: 30px;
+  background:linear-gradient(135deg, #184e68 0%,#57ca85 100%);
+}
+
+  .needs-validation{
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  overflow: hidden;
+}
+
+.fab {
+  width: 100%;
+  text-align: right;
+  font-size: 3rem;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.username-input, .teamname-input, .logourl-input, .password-input, .email-id-input, .confirm-password-input {
+  margin: 40px;
+  color: #000000;
+  background-color: transparent;
+}
+
+.username-input input, .teamname-input input, .logourl-input input, .password-input input, .email-id-input input, .confirm-password-input input{
+  background-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff ;
+  }
+
+.content h1{
+  margin-left: 40px;
+  color: #ffffff;
+}
+
+.btn{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 40px 0px 40px;
+  width: 100%;
+}
+
+#buttonId {
+  width: 100%;
+  border-radius: .25rem;
+  outline: none;
+  background-color: transparent;
+  color: #f5f5f6;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #ffffff;
+}
+
+#buttonId:hover{
+  border:0px;
+  background-color: #f5f5f6;
+  color:#004d40 ;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.6s ease 0s;
+}
+
+
+#validationCustom01, #validationCustom02, #validationCustom03, #validationCustom04, #validationCustom05, #validationCustom06{
+  border-top: 0px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px;
+  color: #ffffff;
+}
+
+#username-error, #email-error, #password-error{
+  padding: 5px;
+  color: red;
+}
